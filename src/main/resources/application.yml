@@ -2,6 +2,5 @@ server:
   servlet:
     context-path: ${CONTEXT_PATH:/api}
 
-# suppress inspection "SpringBootApplicationProperties"
 catalog_parser:
   cache_enabled: ${APP_CATALOG_PARSER_CACHE_ENABLED:true}
