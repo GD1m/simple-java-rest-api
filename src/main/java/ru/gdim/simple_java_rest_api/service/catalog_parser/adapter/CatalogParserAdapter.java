@@ -1,8 +1,8 @@
-package ru.gdim.simple_java_rest_api.service.catalog.adapter;
+package ru.gdim.simple_java_rest_api.service.catalog_parser.adapter;
 
 import org.jetbrains.annotations.NotNull;
 import ru.gdim.simple_java_rest_api.application.parsed_catalog.Catalog;
-import ru.gdim.simple_java_rest_api.service.catalog.CatalogParser;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.CatalogParser;
 
 import java.net.URL;
 

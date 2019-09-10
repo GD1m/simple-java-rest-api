@@ -5,7 +5,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
-import ru.gdim.simple_java_rest_api.service.catalog.exception.NotFoundException;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.exception.NotFoundException;
 import ru.gdim.simple_java_rest_api.service.resource_version.exception.HttpRequestFailedException;
 
 import java.io.IOException;

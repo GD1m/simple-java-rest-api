@@ -3,7 +3,7 @@ package ru.gdim.simple_java_rest_api.application.repository;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 import ru.gdim.simple_java_rest_api.application.parsed_catalog.Catalog;
-import ru.gdim.simple_java_rest_api.service.catalog.CatalogParser;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.CatalogParser;
 
 import java.net.URL;
 

@@ -1,4 +1,4 @@
-package ru.gdim.simple_java_rest_api.service.catalog;
+package ru.gdim.simple_java_rest_api.service.catalog_parser;
 
 import org.jetbrains.annotations.NotNull;
 import ru.gdim.simple_java_rest_api.application.parsed_catalog.Catalog;
