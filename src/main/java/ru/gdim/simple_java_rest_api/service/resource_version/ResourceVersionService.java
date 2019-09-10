@@ -56,6 +56,6 @@ public final class ResourceVersionService {
             return null;
         }
 
-        return new ResourceVersion(url, eTag, lastModified);
+        return new ResourceVersionImpl(url, eTag, lastModified);
     }
 }
