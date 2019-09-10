@@ -3,9 +3,9 @@ package ru.gdim.simple_java_rest_api.infrastructure.definition;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import ru.gdim.simple_java_rest_api.infrastructure.configuration.CatalogParserConfig;
-import ru.gdim.simple_java_rest_api.service.catalog.CatalogParser;
-import ru.gdim.simple_java_rest_api.service.catalog.CatalogParserImpl;
-import ru.gdim.simple_java_rest_api.service.catalog.adapter.CachedCatalogParser;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.CatalogParser;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.CatalogParserImpl;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.adapter.CachedCatalogParser;
 import ru.gdim.simple_java_rest_api.service.resource_version.ResourceVersionService;
 
 @Component

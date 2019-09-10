@@ -1,11 +1,11 @@
-package ru.gdim.simple_java_rest_api.service.catalog;
+package ru.gdim.simple_java_rest_api.service.catalog_parser;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.jetbrains.annotations.NotNull;
 import ru.gdim.simple_java_rest_api.application.parsed_catalog.Catalog;
-import ru.gdim.simple_java_rest_api.service.catalog.exception.*;
+import ru.gdim.simple_java_rest_api.service.catalog_parser.exception.*;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -42,8 +42,8 @@ public final class CatalogParserImpl implements CatalogParser {
             throw new MissedDataException("XML element `yml_catalog.shop` can not be null", url);
         }
 
-        if (Objects.isNull(catalog.getShop().getOffers())) {
-            throw new MissedDataException("XML element `yml_catalog.shop.offers` can not be null", url);
+        if (Objects.isNull(catalog.getShop().getOffers()) || catalog.getShop().getOffers().isEmpty()) {
+            throw new MissedDataException("XML element `yml_catalog.shop.offers` can not be null or empty", url);
         }
     }
 }
